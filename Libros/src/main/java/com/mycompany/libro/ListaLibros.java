@@ -8,15 +8,15 @@ public class ListaLibros {
     // Array de los libros
     public static void main(String[] args) {
         Libro[] libros = {
-            new Libro(1, "The Way of Kings"),
-            new Libro(2, "Words of Radiance"),
-            new Libro(3, "Oathbringer"),
-            new Libro(4, "Rhythm of War"),
-            new Libro(5, "Mistborn: The Final Empire"),
-            new Libro(6, "The Well of Ascension"),
-            new Libro(7, "The Hero of Ages"),
-            new Libro(8, "Warbreaker"),
-            new Libro(9, "Elantris")
+            new Libro("978-0-7653-2635-7", "The Way of Kings"),
+            new Libro("978-0-7653-2636-4", "Words of Radiance"),
+            new Libro("978-0-7653-2637-1", "Oathbringer"),
+            new Libro("978-0-7653-2638-8", "Rhythm of War"),
+            new Libro("978-0-7653-5038-3", "Mistborn: The Final Empire"),
+            new Libro("978-0-7653-2030-0", "The Well of Ascension"),
+            new Libro("978-0-7653-5611-8", "The Hero of Ages"),
+            new Libro("978-0-7653-2030-0", "Warbreaker"),
+            new Libro("978-0-7653-1176-6", "Elantris")
         };
 
         GestorLibro gestor = new GestorLibro(libros);
@@ -28,4 +28,3 @@ public class ListaLibros {
         }
     }
 }
-
