@@ -28,7 +28,7 @@ public class Hilo implements Runnable {
 
                 System.out.println(nombre + " ha terminado de usar los libros.");
 
-                gestor.devolverLibros(librosPrestados);
+                gestor.devolverLibros(librosPrestados, nombre);
                 System.out.println(nombre + " ha devuelto los libros.");
                 
                 //Una o tres hora
