@@ -22,7 +22,7 @@ public class GestorLibros  {
 
             synchronized (libro) {
                 if (!libro.Estaocupado()) {
-                    libro.setPrestado(true);
+                    libro.setPrestado(true, nombreEstudiante);
                     librosPrestados[librosObtenidos] = libro;
                     librosObtenidos++;
                 } else {
@@ -35,11 +35,11 @@ public class GestorLibros  {
 
     //  Devolver los libros
     
-    public void devolverLibros(Libro[] librosPrestados) {
+    public void devolverLibros(Libro[] librosPrestados, String nombreEstudiante) {
         for (Libro libro : librosPrestados) {
             if (libro != null) {
                 synchronized (libro) {
-                    libro.setPrestado(false);
+                    libro.setPrestado(false, nombreEstudiante);
                 }
             }
         }
