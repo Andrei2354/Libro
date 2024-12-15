@@ -31,9 +31,9 @@ public class Libro {
         this.nombreEstudiante = estudiante;
         if (prestado) {
             this.nombreEstudiante = estudiante;
-            System.out.println(estudiante + " tiene el Libro " + nombreLibro + ", ISBN: " + isbn + ".");
+            //System.out.println(estudiante + " tiene el Libro " + nombreLibro + ", ISBN: " + isbn + ".");
         } else {
-            System.out.println(estudiante +" a devuelto el Libro " + nombreLibro + ", ISBN: " + isbn + ".");
+            //System.out.println(estudiante +" a devuelto el Libro " + nombreLibro + ", ISBN: " + isbn + ".");
             this.nombreEstudiante = null;
         }
     }
